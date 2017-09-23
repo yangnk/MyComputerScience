@@ -34,5 +34,4 @@ hs_err_pid*
 .idea/
 computerScienceBasic.iml
 pom.xml
-src/
 target/
