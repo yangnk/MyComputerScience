@@ -26,6 +26,5 @@ public class ShapeCache {
         square1.setId(3);
         square1.setName("square");
         hashmap1.put(square1.getId(), square1);
-
     }
 }
