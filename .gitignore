@@ -33,3 +33,4 @@ hs_err_pid*
 .gitignore
 target/
 
+/src/main/java/myTest/

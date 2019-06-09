@@ -1,4 +1,4 @@
-package designPattaren.singleInstance;
+package designPattaren.singleton;
 
 /**
  * ${懒汉式单例模式}

@@ -1,16 +1,18 @@
 package designPattaren.builder;
 
+/**
+ * ${DESCRIPTION}
+ *
+ * @author yangningkai
+ * @create 2018-12-16 下午5:47
+ **/
 public class Director {
-    public Builder mBuilder = null;
+    CarBuilder carBuilder = null;
 
-    public Director(Builder builder) {
-        mBuilder = builder;
+    void construct() {
+        this.carBuilder = new CarBuilderImpl();
+        carBuilder.getEngine();
+        carBuilder.getWheel();
+        carBuilder.getSeat();
     }
-
-    public void construct(int cpu, int ram, String os) {
-        mBuilder.buildCPU(cpu);
-        mBuilder.buildRAM(ram);
-        mBuilder.buildOs(os);
-    }
-
 }

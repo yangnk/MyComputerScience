@@ -1,6 +1,4 @@
-package designPattaren.builder.carBuilder;
-
-import com.sun.xml.internal.ws.api.pipe.Engine;
+package designPattaren.builder;
 
 /**
  * ${DESCRIPTION}
@@ -10,7 +8,7 @@ import com.sun.xml.internal.ws.api.pipe.Engine;
  **/
 public class CarBuilderImpl implements CarBuilder {
     Wheel wheel = null;
-    Engine1 engine = null;
+    Engine engine = null;
     Seat seat = null;
 
     @Override
@@ -21,7 +19,7 @@ public class CarBuilderImpl implements CarBuilder {
 
     @Override
     public void getEngine() {
-        this.engine = new Engine1();
+        this.engine = new Engine();
         System.out.println("this is engine.");
     }
 

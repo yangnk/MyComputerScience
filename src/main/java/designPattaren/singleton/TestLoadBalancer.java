@@ -1,4 +1,4 @@
-package designPattaren.singleInstance;
+package designPattaren.singleton;
 
 /**
  * ${DESCRIPTION}

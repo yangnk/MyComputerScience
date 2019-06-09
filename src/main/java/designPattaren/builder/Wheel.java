@@ -1,4 +1,4 @@
-package designPattaren.builder.carBuilder;
+package designPattaren.builder;
 
 /**
  * ${DESCRIPTION}
@@ -6,5 +6,6 @@ package designPattaren.builder.carBuilder;
  * @author yangningkai
  * @create 2018-12-16 下午5:45
  **/
-public class Engine1 {
+public class Wheel {
+    //实现该组件具体逻辑
 }

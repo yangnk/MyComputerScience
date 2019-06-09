@@ -1,4 +1,4 @@
-package designPattaren.singleInstance;
+package designPattaren.singleton;
 
 /**
  * ${饿汉式单例模式,实现双重校验}

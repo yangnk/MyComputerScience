@@ -1,4 +1,4 @@
-package designPattaren.builder.carBuilder;
+package designPattaren.builder;
 
 /**
  * ${DESCRIPTION}

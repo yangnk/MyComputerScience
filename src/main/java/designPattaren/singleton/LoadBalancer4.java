@@ -1,4 +1,4 @@
-package designPattaren.singleInstance;
+package designPattaren.singleton;
 
 /**
  * ${通过内部类的方式实现单例，弥补类懒汉式不能延迟加载的问题}
