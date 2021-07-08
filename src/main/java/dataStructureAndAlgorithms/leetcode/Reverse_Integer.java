@@ -1,4 +1,4 @@
-package dataStructureAndAlgorithms.oj;
+package dataStructureAndAlgorithms.leetcode;
 
 public class Reverse_Integer {
     public static void main(String[] args) {
