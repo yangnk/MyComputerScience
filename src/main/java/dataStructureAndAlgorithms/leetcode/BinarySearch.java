@@ -19,7 +19,7 @@ public class BinarySearch {
         int start = 0;
         int end = nums.length - 1;
         int flag = 0;
-        while (start < end){
+        while (start <=  end){
             flag = (start + end) / 2;
             if (nums[flag] == target) {
                 return flag;
