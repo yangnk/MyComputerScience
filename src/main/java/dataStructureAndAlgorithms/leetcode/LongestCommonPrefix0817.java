@@ -20,7 +20,7 @@ public class LongestCommonPrefix0817 {
     public static String longestCommonPrefix(String[] strs) {
         int index = 0;
         StringBuilder sb = new StringBuilder();
-        Set<Character> charSet = new HashSet<>();
+        Set<Character> charSet = new HashSet<Character>();
 
         loop:
         while (true) {
