@@ -7,7 +7,7 @@
 // * @create 2021-11-13 22:59
 // **/
 //public class MaximumDepthOfBinaryTree1113 {
-//    public int maxDepth(TreeNode root) {
+//    public int maxDepth(TreeNod1230 root) {
 //        if (root == null) {
 //            return 0;
 //        }
@@ -21,13 +21,13 @@
 //
 //
 ////Definition for a binary tree node.
-//class TreeNode {
+//class TreeNod1230 {
 //    int val;
-//    TreeNode left;
-//    TreeNode right;
-//    TreeNode() {}
-//    TreeNode(int val) { this.val = val; }
-//    TreeNode(int val, TreeNode left, TreeNode right) {
+//    TreeNod1230 left;
+//    TreeNod1230 right;
+//    TreeNod1230() {}
+//    TreeNod1230(int val) { this.val = val; }
+//    TreeNod1230(int val, TreeNod1230 left, TreeNod1230 right) {
 //        this.val = val;
 //        this.left = left;
 //        this.right = right;

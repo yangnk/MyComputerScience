@@ -10,16 +10,16 @@
 // * @create 2021-11-12 00:10
 // **/
 //public class IntersectionOfTwoLinkedLists1111 {
-//    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-//        Set<ListNode> mySet = new HashSet<ListNode>();
-//        ListNode tmpA = headA;
+//    public ListNode1231a getIntersectionNode(ListNode1231a headA, ListNode1231a headB) {
+//        Set<ListNode1231a> mySet = new HashSet<ListNode1231a>();
+//        ListNode1231a tmpA = headA;
 //
 //        while(tmpA != null){
 //            mySet.add(tmpA);
 //            tmpA = tmpA.next;
 //        }
 //
-//        ListNode tmpB = headB;
+//        ListNode1231a tmpB = headB;
 //        while (tmpB != null) {
 //            if (mySet.contains(tmpB)) {
 //                return tmpB;
@@ -30,10 +30,10 @@
 //    }
 //}
 //
-//  class ListNode {
+//  class ListNode1231a {
 //      int val;
-//      ListNode next;
-//      ListNode(int x) {
+//      ListNode1231a next;
+//      ListNode1231a(int x) {
 //          val = x;
 //          next = null;
 //      }

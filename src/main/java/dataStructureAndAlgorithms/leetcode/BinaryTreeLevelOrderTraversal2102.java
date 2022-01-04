@@ -11,13 +11,13 @@ import java.util.List;
  * @create 2021-12-02 18:01
  **/
 public class BinaryTreeLevelOrderTraversal2102 {
-    public List<List<Integer>> levelOrder(TreeNode root) {
+    public List<List<Integer>> levelOrder(TreeNod1230 root) {
         if(root==null) {
             return new ArrayList<List<Integer>>();
         }
 
         List<List<Integer>> res = new ArrayList<List<Integer>>();
-        LinkedList<TreeNode> queue = new LinkedList<TreeNode>();
+        LinkedList<TreeNod1230> queue = new LinkedList<TreeNod1230>();
         //将根节点放入队列中，然后不断遍历队列
         queue.add(root);
         while(queue.size()>0) {
@@ -27,7 +27,7 @@ public class BinaryTreeLevelOrderTraversal2102 {
             //将队列中的元素都拿出来(也就是获取这一层的节点)，放到临时list中
             //如果节点的左/右子树不为空，也放入队列中
             for(int i=0;i<size;++i) {
-                TreeNode t = queue.remove();
+                TreeNod1230 t = queue.remove();
                 tmp.add(t.val);
                 if(t.left!=null) {
                     queue.add(t.left);

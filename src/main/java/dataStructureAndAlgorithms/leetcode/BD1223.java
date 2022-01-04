@@ -11,16 +11,16 @@
 // **/
 //
 ////Definition for singly-linked list.
-//class ListNode {
+//class ListNode1231a {
 //    int val;
-//    ListNode next;
-//    ListNode() {}
-//    ListNode(int val) { this.val = val; }
-//    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+//    ListNode1231a next;
+//    ListNode1231a() {}
+//    ListNode1231a(int val) { this.val = val; }
+//    ListNode1231a(int val, ListNode1231a next) { this.val = val; this.next = next; }
 //}
 //
 //public class BD1223 {
-//    public ListNode reverseList(ListNode head) {
+//    public ListNode1231a reverseList(ListNode1231a head) {
 //        if (head == null) {
 //            return null;
 //        }
@@ -30,28 +30,28 @@
 //            head = head.next;
 //        }
 //        Collections.reverse(arrayList);
-//        ListNode root = null;
-//        ListNode tail = null;
+//        ListNode1231a root = null;
+//        ListNode1231a tail = null;
 //        root = tail;
 //        for (int i = 0; i < arrayList.size(); i++) {
-//            ListNode ListNode = new ListNode();
+//            ListNode1231a ListNode1231a = new ListNode1231a();
 //            if (i == 0) {
-//                ListNode.val = arrayList.get(0);
-//                root = ListNode;
-//                tail = ListNode;
+//                ListNode1231a.val = arrayList.get(0);
+//                root = ListNode1231a;
+//                tail = ListNode1231a;
 //                continue;
 //            }
-//            ListNode.val = arrayList.get(i);
-//            tail.next = ListNode;
-//            tail = ListNode;
+//            ListNode1231a.val = arrayList.get(i);
+//            tail.next = ListNode1231a;
+//            tail = ListNode1231a;
 //        }
 //        return root;
 //    }
-//    public ListNode reverseListV2(ListNode head) {
-//        ListNode curr = head;
-//        ListNode pre = null;
+//    public ListNode1231a reverseListV2(ListNode1231a head) {
+//        ListNode1231a curr = head;
+//        ListNode1231a pre = null;
 //        while (curr != null) {
-//            ListNode next = curr.next;
+//            ListNode1231a next = curr.next;
 //            curr.next = pre;
 //            pre = curr;
 //            curr = next;

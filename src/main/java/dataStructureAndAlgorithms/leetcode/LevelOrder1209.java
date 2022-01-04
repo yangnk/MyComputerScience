@@ -13,8 +13,8 @@ import java.util.Queue;
  **/
 public class LevelOrder1209 {
 
-    public List<List<Integer>> levelOrder(TreeNode root) {
-        Queue<TreeNode> queue = new ArrayDeque<>();
+    public List<List<Integer>> levelOrder(TreeNod1230 root) {
+        Queue<TreeNod1230> queue = new ArrayDeque<>();
         List<List<Integer>> result = new ArrayList<>();
         if (root == null) {
             return result;
@@ -25,13 +25,13 @@ public class LevelOrder1209 {
             int n = queue.size();
             List<Integer> integerList = new ArrayList<>();
             for (int i = 0; i < n; i++) {
-                TreeNode treeNode = queue.poll();
-                integerList.add(treeNode.val);
-                if (treeNode.left != null) {
-                    queue.offer(treeNode.left);
+                TreeNod1230 treeNod1230 = queue.poll();
+                integerList.add(treeNod1230.val);
+                if (treeNod1230.left != null) {
+                    queue.offer(treeNod1230.left);
                 }
-                if (treeNode.right != null) {
-                    queue.offer(treeNode.right);
+                if (treeNod1230.right != null) {
+                    queue.offer(treeNod1230.right);
                 }
             }
             result.add(integerList);
@@ -42,11 +42,11 @@ public class LevelOrder1209 {
 
 class TreeNode {
     int val;
-    TreeNode left;
-    TreeNode right;
+    TreeNod1230 left;
+    TreeNod1230 right;
     TreeNode() {}
     TreeNode(int val) { this.val = val; }
-    TreeNode(int val, TreeNode left, TreeNode right) {
+    TreeNode(int val, TreeNod1230 left, TreeNod1230 right) {
         this.val = val;
         this.left = left;
         this.right = right;
