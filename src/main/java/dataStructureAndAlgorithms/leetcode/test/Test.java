@@ -12,19 +12,19 @@ import java.util.TreeMap;
  **/
 public class Test {
     public static void main(String[] args) {
-        System.out.println(Math.sqrt(9));
-        System.out.println(Math.floor(Math.sqrt(9)));
+        int[][] ints = new int[3][];
+        ints[0] = new int[]{};
+        ints[1] = new int[]{};
+        ints[2] = new int[]{};
+        for (int i = 0; i < ints.length; i++) {
+            for (int j = 0; j < ints[i].length; j++) {
+                System.out.println(ints[i][j]);
 
-//        TreeMap<Integer, String> treeMap = new TreeMap<>();
-//        treeMap.put(1, "a");
-//        treeMap.put(10, "c");
-//        treeMap.put(5, "b");
-//        System.out.println(treeMap.firstEntry().getKey());
-//        System.out.println("=======");
-//        Iterator<Map.Entry<Integer, String>> iterator = treeMap.entrySet().iterator();
-//
-//        while (iterator.hasNext()) {
-//            System.out.println(iterator.next().getKey());
-//        }
+            }
+        }
+        System.out.println(ints.toString());
+        System.out.println('A'+1);
+
+
     }
 }
