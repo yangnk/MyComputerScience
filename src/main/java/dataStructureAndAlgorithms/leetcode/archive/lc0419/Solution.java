@@ -8,6 +8,7 @@ import java.util.Set;
 class ListNode {
     int val;
     ListNode next;
+
     ListNode(int x) {
         val = x;
         next = null;
@@ -30,7 +31,6 @@ public class Solution {
         }
         return null;
     }
-
 
 
 //    //求取出两个链表的长度差，再长链表减去长度差后保障和端链表对其，最后同时往后移动，看是否有交汇点

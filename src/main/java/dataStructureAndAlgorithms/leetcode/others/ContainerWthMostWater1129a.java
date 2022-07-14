@@ -21,9 +21,7 @@ public class ContainerWthMostWater1129a {
         int j = height.length - 1;
         int ans = 0;
         while (i < j) {
-            ans = height[i] < height[j] ?
-                    Math.max(ans, (j - i) * height[i++]):
-                    Math.max(ans, (j - i) * height[j--]);
+            ans = height[i] < height[j] ? Math.max(ans, (j - i) * height[i++]) : Math.max(ans, (j - i) * height[j--]);
         }
         return ans;
     }

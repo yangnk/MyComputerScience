@@ -15,6 +15,7 @@ public class Solution1 {
         findKthLargest(ints, 2);
 
     }
+
     public static int findKthLargest(int[] nums, int k) {
         PriorityQueue<Integer> priorityQueue = new PriorityQueue<>(new Comparator<Integer>() {
             @Override

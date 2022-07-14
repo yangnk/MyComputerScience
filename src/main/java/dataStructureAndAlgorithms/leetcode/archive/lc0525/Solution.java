@@ -31,7 +31,7 @@ class Solution {
                 dp[1] = 1;
             } else if (((chars[1] - chars[0] + 26) % 26 == 1)) {
                 dp[1] = 3;
-            }else {
+            } else {
                 dp[1] = 2;
             }
         }
@@ -40,7 +40,7 @@ class Solution {
             //s[i]重复且连不上前一个子串
             if (set.contains(p.substring(i, i + 1)) && ((chars[i] - chars[i - 1] + 26) % 26 != 1)) {
                 dp[i] = dp[i - 1];
-                System.out.printf("===1===dp[i]:%d",dp[i]);
+                System.out.printf("===1===dp[i]:%d", dp[i]);
                 System.out.println();
                 continue;
             }
@@ -48,21 +48,21 @@ class Solution {
             if (!set.contains(p.substring(i, i + 1)) && ((chars[i] - chars[i - 1] + 26) % 26 != 1)) {
                 dp[i] = dp[i - 1] + 1;
                 set.add(p.substring(i, i + 1));
-                System.out.printf("==2===dp[i]:%d",dp[i]);
+                System.out.printf("==2===dp[i]:%d", dp[i]);
                 System.out.println();
                 continue;
             }
             //s[i]重复且能连上前一个子串
             if (set.contains(p.substring(i, i + 1)) && ((chars[i] - chars[i - 1] + 26) % 26 == 1)) {
                 dp[i] = 2 * dp[i - 1] - dp[i - 2];
-                System.out.printf("===3===dp[i]:%d",dp[i]);
+                System.out.printf("===3===dp[i]:%d", dp[i]);
                 System.out.println();
                 continue;
             }
             //s[i]不重复且能连上前一个子串
             if (!set.contains(p.substring(i, i + 1)) && ((chars[i] - chars[i - 1] + 26) % 26 == 1)) {
                 dp[i] = 2 * dp[i - 1] + 1 - dp[i - 2];
-                System.out.printf("===4===dp[i]:%d",dp[i]);
+                System.out.printf("===4===dp[i]:%d", dp[i]);
                 System.out.println();
                 set.add(p.substring(i, i + 1));
                 continue;

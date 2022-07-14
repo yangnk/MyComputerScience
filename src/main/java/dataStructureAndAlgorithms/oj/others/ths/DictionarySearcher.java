@@ -18,8 +18,9 @@ import java.util.HashMap;
 //         “浙江”: [28, ...]
 //         “浙江大学”: [28, ...]
 //         }
-public class DictionarySearcher{
+public class DictionarySearcher {
     String[] words;
+
     //构造方法，将关键词字符串切分为数组
     public DictionarySearcher(String filename) {
         ArrayList<String> arrayList = new ArrayList<>();
@@ -41,8 +42,8 @@ public class DictionarySearcher{
         HashMap<String, ArrayList<Integer>> output = new HashMap<String, ArrayList<Integer>>();
         String[] documents = document.split("");
         for (String item : words) {
-            ArrayList<Integer> count = KMP(documents,item);
-            if(!count.isEmpty()){
+            ArrayList<Integer> count = KMP(documents, item);
+            if (!count.isEmpty()) {
                 output.put(item, count);
             }
         }
@@ -94,11 +95,9 @@ public class DictionarySearcher{
         return next;
     }
 
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         String filename = "src/main/java/dataStructureAndAlgorithms/oj/ths/test.txt";
-        String document = "美国规划协会中国办公室揭牌仪式及美国规划领域合作研讨会在浙江大学城乡规划设计研究院208会议室举行。" +
-                "美国规划协会CEO James Drinan，国际项目及外联主任Jeffrey Soule先生，浙江大学党委副书记任少波，" +
-                "浙江大学控股集团领导杨其和，西湖区政府代表应权英副主任....";
+        String document = "美国规划协会中国办公室揭牌仪式及美国规划领域合作研讨会在浙江大学城乡规划设计研究院208会议室举行。" + "美国规划协会CEO James Drinan，国际项目及外联主任Jeffrey Soule先生，浙江大学党委副书记任少波，" + "浙江大学控股集团领导杨其和，西湖区政府代表应权英副主任....";
         DictionarySearcher dictionarySearcher = new DictionarySearcher(filename);
         System.out.println(dictionarySearcher.search(document));
     }

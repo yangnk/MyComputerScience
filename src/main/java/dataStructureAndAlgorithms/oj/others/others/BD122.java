@@ -24,9 +24,9 @@ public class BD122 {
         String tmp1 = "";
         for (int i = 0; i < s.length(); i++) {
             tmp = String.valueOf(s.charAt(i));
-            if (tmp.equals("(")||tmp.equals("[")||tmp.equals("{")) {
+            if (tmp.equals("(") || tmp.equals("[") || tmp.equals("{")) {
                 stack.push(tmp);
-            }else {
+            } else {
                 if (stack.isEmpty()) {
                     return false;
                 }

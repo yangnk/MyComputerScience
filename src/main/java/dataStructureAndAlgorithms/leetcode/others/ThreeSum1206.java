@@ -10,9 +10,10 @@ import java.util.*;
  **/
 public class ThreeSum1206 {
     public static void main(String[] args) {
-        List<List<Integer>> a = threeSum(new int[]{-1,0,1,2,-1,-4});
+        List<List<Integer>> a = threeSum(new int[]{-1, 0, 1, 2, -1, -4});
         System.out.println(a.toString());
     }
+
     public static List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> resultListList = new ArrayList<List<Integer>>();
         Arrays.sort(nums);
@@ -41,8 +42,8 @@ public class ThreeSum1206 {
             }
         }
         return resultListList;
-        }
-
-
     }
+
+
+}
 

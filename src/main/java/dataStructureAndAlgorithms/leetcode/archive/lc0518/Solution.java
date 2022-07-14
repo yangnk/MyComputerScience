@@ -11,8 +11,9 @@ import java.util.Set;
  **/
 class Solution {
     public static void main(String[] args) {
-        System.out.printf("//output:%s//",distinctSubseqII("aba"));
+        System.out.printf("//output:%s//", distinctSubseqII("aba"));
     }
+
     public static int distinctSubseqII(String s) {
         //s长度为1
         if (s.length() == 1) {
@@ -22,7 +23,7 @@ class Solution {
         if (s.length() == 2) {
             if (s.toCharArray()[0] == s.toCharArray()[1]) {
                 return 2;
-            }else {
+            } else {
                 return 3;
             }
 
@@ -32,7 +33,7 @@ class Solution {
         dp[0] = 1;
         if (s.toCharArray()[0] == s.toCharArray()[1]) {
             dp[1] = 2;
-        }else {
+        } else {
             dp[1] = 3;
         }
         Set<Character> existChar = new HashSet<>();
@@ -43,11 +44,11 @@ class Solution {
             if (existChar.contains(s.toCharArray()[i])) {
                 System.out.printf("s:%s,i:%d", s, i);
                 int lastIndex = s.substring(0, i).lastIndexOf(s.charAt(i));
-                System.out.printf("//lastIndex:%d",lastIndex);
+                System.out.printf("//lastIndex:%d", lastIndex);
                 int dif;
                 if (lastIndex == 0) {
                     dif = 1;
-                }else {
+                } else {
                     dif = dp[lastIndex - 1];
                 }
                 dp[i] = 2 * dp[i - 1] + 1 - dif;

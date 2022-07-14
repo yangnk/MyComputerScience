@@ -72,7 +72,7 @@ public class ALIYUN2_0124 {
                     order = nextLight;
                     condition.signalAll();
                 }
-            }finally {
+            } finally {
                 lock.unlock();
             }
         }

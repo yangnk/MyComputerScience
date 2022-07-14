@@ -9,7 +9,7 @@ public class Solution1 {
         System.out.println(result);
     }
 
-    public static boolean Find(int target, int [][] array) {
+    public static boolean Find(int target, int[][] array) {
         if (array == null || array[0].length == 0) {
             return false;
         }
@@ -36,7 +36,7 @@ public class Solution1 {
                 return true;
             } else if (nums[middle] < target) {
                 start = middle + 1;
-            }else {
+            } else {
                 end = middle - 1;
             }
         }

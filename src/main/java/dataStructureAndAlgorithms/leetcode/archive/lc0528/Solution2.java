@@ -20,9 +20,18 @@ package dataStructureAndAlgorithms.leetcode.lc0528;
 class ListNode {
     int val;
     ListNode next;
-    ListNode() {}
-    ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+
+    ListNode() {
+    }
+
+    ListNode(int val) {
+        this.val = val;
+    }
+
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+    }
 }
 
 public class Solution2 {
@@ -34,7 +43,7 @@ public class Solution2 {
 
         //循环对head节点进行插入排序
         while (head != null) {
-            System.out.printf("head.val:%d\n",head.val);
+            System.out.printf("head.val:%d\n", head.val);
             ListNode selectedHead = head;
             head = head.next;
             selectedHead.next = null;
@@ -56,7 +65,7 @@ public class Solution2 {
                     ptrNewHead.next = selectedHead;
                     break;
                 }
-                System.out.printf("ptrNewHead.val:%d\n",ptrNewHead.val);
+                System.out.printf("ptrNewHead.val:%d\n", ptrNewHead.val);
             }
         }
         return dummyNewHead.next;

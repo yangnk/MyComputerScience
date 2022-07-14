@@ -24,7 +24,7 @@ public class ClimbingStairs1029a {
         }
         nums[1] = 1;
         nums[2] = 2;
-        for (int i = 3; i<=n;i++) {
+        for (int i = 3; i <= n; i++) {
             nums[i] = nums[i - 1] + nums[i - 2];
         }
         return nums[n];

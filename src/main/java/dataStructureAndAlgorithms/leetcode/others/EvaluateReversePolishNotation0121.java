@@ -14,12 +14,13 @@ public class EvaluateReversePolishNotation0121 {
         System.out.println(evalRPN(token));
 
     }
+
     public static int evalRPN(String[] tokens) {
         Stack<Integer> stack = new Stack<>();
         for (String item : tokens) {
             if (!isSymbol(item)) {
                 stack.push(Integer.parseInt(item));
-            }else {
+            } else {
                 int num1, num2;
                 switch (item) {
                     case "+":

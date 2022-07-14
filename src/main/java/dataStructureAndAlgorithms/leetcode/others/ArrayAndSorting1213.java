@@ -8,7 +8,7 @@ package dataStructureAndAlgorithms.leetcode.others;
  **/
 public class ArrayAndSorting1213 {
     public static void main(String[] args) {
-        int[][] grid ={{0,1},{1,1}};
+        int[][] grid = {{0, 1}, {1, 1}};
         ArrayAndSorting1213 arrayAndSorting1213 = new ArrayAndSorting1213();
         int maxAreaOfIsland = arrayAndSorting1213.maxAreaOfIsland(grid);
         System.out.println(maxAreaOfIsland);
@@ -56,8 +56,9 @@ public class ArrayAndSorting1213 {
     }
 
     class Coordinate {
-     int x;
-     int y;
+        int x;
+        int y;
+
         Coordinate(int x, int y) {
             this.x = x;
             this.y = y;

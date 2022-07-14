@@ -12,6 +12,7 @@ import java.util.List;
 class Solution {
     List<List<Integer>> result = new ArrayList<>();
     List<Integer> path = new ArrayList<>();
+
     public List<List<Integer>> permute(int[] nums) {
         permuteTrace(nums);
         return result;

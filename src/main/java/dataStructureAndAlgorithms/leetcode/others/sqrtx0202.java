@@ -15,19 +15,19 @@ public class sqrtx0202 {
         int left = 0;
         int right = x;
         while (true) {
-            if ((long)(left * left) > x) {
+            if ((long) (left * left) > x) {
                 return left - 1;
             }
-            if ((long)(right * right) < x) {
+            if ((long) (right * right) < x) {
                 return right;
             }
 
             int middle = (left + right) / 2;
-            if ((long)(middle * middle) == x) {
+            if ((long) (middle * middle) == x) {
                 return middle;
-            }else if ((long)(middle * middle) > x) {
+            } else if ((long) (middle * middle) > x) {
                 right = middle - 1;
-            }else {
+            } else {
                 left = middle + 1;
             }
         }

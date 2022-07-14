@@ -7,12 +7,11 @@ public class Solution {
     /**
      * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
      *
-     *
-     * @param nums int整型一维数组
+     * @param nums   int整型一维数组
      * @param target int整型
      * @return int整型
      */
-    public int search (int[] nums, int target) {
+    public int search(int[] nums, int target) {
         if (nums == null || nums.length == 0) {
 
             return -1;
@@ -33,7 +32,7 @@ public class Solution {
                 return middle;
             } else if (nums[middle] > target) {
                 end = middle;
-            }else {
+            } else {
                 start = middle;
             }
             middle = (start + end) / 2;
@@ -41,7 +40,7 @@ public class Solution {
         return -1;
     }
 
-    public int search1 (int[] nums, int target) {
+    public int search1(int[] nums, int target) {
         int start = 0;
         int end = nums.length - 1;
 

@@ -32,8 +32,8 @@ public class MaximumSubarray1012 {
                     if (sum >= newSum) {
                         sum = newSum;
                         flag++;
-                        System.out.printf("1.===%d===",sum);
-                    }else {
+                        System.out.printf("1.===%d===", sum);
+                    } else {
                         start = flag + 1;
                         break;
                     }
@@ -41,7 +41,7 @@ public class MaximumSubarray1012 {
                 leftOrRight = 1;
                 continue;
             }
-            if(leftOrRight == 1) {
+            if (leftOrRight == 1) {
                 flag = end;
                 int sum = nums[flag];
                 while (flag >= start) {
@@ -49,8 +49,8 @@ public class MaximumSubarray1012 {
                     if (sum >= newSum) {
                         sum = newSum;
                         flag--;
-                        System.out.printf("2.===%d===",sum);
-                    }else {
+                        System.out.printf("2.===%d===", sum);
+                    } else {
                         end = flag - 1;
                         break;
                     }

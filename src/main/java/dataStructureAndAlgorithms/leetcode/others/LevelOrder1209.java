@@ -44,8 +44,14 @@ class TreeNode {
     int val;
     TreeNod1230 left;
     TreeNod1230 right;
-    TreeNode() {}
-    TreeNode(int val) { this.val = val; }
+
+    TreeNode() {
+    }
+
+    TreeNode(int val) {
+        this.val = val;
+    }
+
     TreeNode(int val, TreeNod1230 left, TreeNod1230 right) {
         this.val = val;
         this.left = left;

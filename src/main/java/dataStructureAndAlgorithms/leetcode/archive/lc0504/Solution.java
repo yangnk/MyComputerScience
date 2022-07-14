@@ -11,8 +11,14 @@ class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
-    TreeNode() {}
-    TreeNode(int val) { this.val = val; }
+
+    TreeNode() {
+    }
+
+    TreeNode(int val) {
+        this.val = val;
+    }
+
     TreeNode(int val, TreeNode left, TreeNode right) {
         this.val = val;
         this.left = left;
@@ -33,8 +39,12 @@ class Solution {
             List<Integer> itemList = new ArrayList<>();
             for (int i = 0; i < len; i++) {
                 TreeNode item = queue.poll();
-                if (item.left != null) { queue.offer(item.left); }
-                if (item.right != null) { queue.offer(item.right); }
+                if (item.left != null) {
+                    queue.offer(item.left);
+                }
+                if (item.right != null) {
+                    queue.offer(item.right);
+                }
                 itemList.add(item.val);
             }
             result.add(itemList);

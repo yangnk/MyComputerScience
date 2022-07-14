@@ -4,6 +4,7 @@ package distributedSystem.limiter;
  * @author yangningkai
  * @create 2022-06-16 15:25
  **/
+
 import java.util.Date;
 
 public class TokenBucketLimiter {
@@ -55,9 +56,7 @@ public class TokenBucketLimiter {
      */
     private void handleRequest(Request request) {
         request.setHandleTime(new Date());
-        System.out.println(request.getCode() + "号请求被处理，请求发起时间："
-                + request.getLaunchTime() + ",请求处理时间：" + request.getHandleTime() + ",处理耗时："
-                + (request.getHandleTime().getTime() - request.getLaunchTime().getTime()) + "ms");
+        System.out.println(request.getCode() + "号请求被处理，请求发起时间：" + request.getLaunchTime() + ",请求处理时间：" + request.getHandleTime() + ",处理耗时：" + (request.getHandleTime().getTime() - request.getLaunchTime().getTime()) + "ms");
     }
 
     /**

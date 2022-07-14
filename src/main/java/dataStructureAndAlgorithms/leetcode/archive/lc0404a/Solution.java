@@ -7,8 +7,14 @@ class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
-    TreeNode() {}
-    TreeNode(int val) { this.val = val; }
+
+    TreeNode() {
+    }
+
+    TreeNode(int val) {
+        this.val = val;
+    }
+
     TreeNode(int val, TreeNode left, TreeNode right) {
         this.val = val;
         this.left = left;
@@ -32,7 +38,7 @@ public class Solution {
         List<Integer> result = new ArrayList<Integer>();
         int maxValue = list.get(0).getValue();
         for (Map.Entry item : list) {
-            if ((int)item.getValue() == maxValue) {
+            if ((int) item.getValue() == maxValue) {
                 result.add((Integer) item.getKey());
             }
         }
@@ -51,7 +57,7 @@ public class Solution {
 
         if (treeMap.containsKey(treeNode.val)) {
             treeMap.put(treeNode.val, treeMap.get(treeNode.val));
-        }else {
+        } else {
             treeMap.put(treeNode.val, 1);
         }
 

@@ -23,8 +23,14 @@ class DFSTreeNode {
     int val;
     DFSTreeNode left;
     DFSTreeNode right;
-    DFSTreeNode() {}
-    DFSTreeNode(int val) { this.val = val; }
+
+    DFSTreeNode() {
+    }
+
+    DFSTreeNode(int val) {
+        this.val = val;
+    }
+
     DFSTreeNode(int val, DFSTreeNode left, DFSTreeNode right) {
         this.val = val;
         this.left = left;

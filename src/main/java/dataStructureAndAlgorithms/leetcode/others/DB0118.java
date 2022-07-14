@@ -10,9 +10,10 @@ import java.util.Arrays;
  **/
 public class DB0118 {
     public static void main(String[] args) {
-        int[] nums = {1,1000};
+        int[] nums = {1, 1000};
         System.out.println(firstMissingPositive(nums));
     }
+
     public static int firstMissingPositive(int[] nums) {
         //一个元素时候
         if (nums.length == 1 && nums[0] != 1) {
@@ -32,7 +33,7 @@ public class DB0118 {
                 if (nums[i] < 1) {
                     continue;
                 }
-                if (nums[j] - nums[i] == 1||nums[j] - nums[i] == 0) {
+                if (nums[j] - nums[i] == 1 || nums[j] - nums[i] == 0) {
                     continue;
                 }
                 return nums[i] + 1;

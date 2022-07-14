@@ -7,8 +7,14 @@ class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
-    TreeNode() {}
-    TreeNode(int val) { this.val = val; }
+
+    TreeNode() {
+    }
+
+    TreeNode(int val) {
+        this.val = val;
+    }
+
     TreeNode(int val, TreeNode left, TreeNode right) {
         this.val = val;
         this.left = left;
@@ -42,6 +48,7 @@ class Solution {
         }
         return root;
     }
+
     //交换左右子节点的位置
     private void swap(TreeNode tmp) {
         TreeNode swapTmp = tmp.left;

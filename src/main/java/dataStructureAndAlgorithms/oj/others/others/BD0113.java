@@ -20,12 +20,7 @@ public class BD0113 {
     public static int startY = 4;
     public static int EndX = 4;
     public static int EndY = 4;
-    public static int[][] arr =
-            {{0, 0, 1, 0, 0},
-            {0, 0, 2, 0, 0},
-            {0, 0, 3, 4, 0},
-            {0, 0, 6, 5, 6},
-            {0, 2, 7, 8, 9},};
+    public static int[][] arr = {{0, 0, 1, 0, 0}, {0, 0, 2, 0, 0}, {0, 0, 3, 4, 0}, {0, 0, 6, 5, 6}, {0, 2, 7, 8, 9},};
     public static int count = 0;
 
     public static void main(String[] args) {

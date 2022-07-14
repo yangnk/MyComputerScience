@@ -11,7 +11,7 @@ public class LEETCODE0302 {
         int maxLen = 1;
         int start = 0;
         int sLen = s.length();
-        boolean[][]dp = new boolean[sLen][sLen];
+        boolean[][] dp = new boolean[sLen][sLen];
         char[] chars = s.toCharArray();
         for (int i = 0; i < sLen; i++) {
             dp[i][i] = true;
@@ -30,7 +30,7 @@ public class LEETCODE0302 {
                 } else {
                     if (j - i < 3) {
                         dp[i][j] = true;
-                    }else {
+                    } else {
                         dp[i][j] = dp[i + 1][j - 1];
                     }
 

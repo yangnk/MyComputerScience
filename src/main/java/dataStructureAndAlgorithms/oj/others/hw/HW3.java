@@ -6,6 +6,7 @@ package dataStructureAndAlgorithms.oj.others.hw;
  * @author yangningkai
  * @create 2021-12-11 15:22
  **/
+
 import java.util.*;
 
 public class HW3 {
@@ -18,12 +19,11 @@ public class HW3 {
             TreeMap<Integer, String> intTreeMap = new TreeMap<>(new Comparator<Integer>() {
                 @Override
                 public int compare(Integer o1, Integer o2) {
-                    int maxLen = String.valueOf(o1).length() > String.valueOf(o2).length() ?
-                            String.valueOf(o2).length() : String.valueOf(o1).length();
+                    int maxLen = String.valueOf(o1).length() > String.valueOf(o2).length() ? String.valueOf(o2).length() : String.valueOf(o1).length();
                     for (int i = 0; i < maxLen; i++) {
                         if (Integer.parseInt(Character.toString(String.valueOf(o1).charAt(i))) > Integer.parseInt(Character.toString(String.valueOf(o2).charAt(i)))) {
                             return -1;
-                        }else {
+                        } else {
                             return 1;
                         }
                     }

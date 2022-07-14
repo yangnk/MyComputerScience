@@ -8,8 +8,9 @@ package dataStructureAndAlgorithms.leetcode.others;
  **/
 public class BD0221 {
     public static void main(String[] args) {
-        System.out.println(addStr("123456","789"));
+        System.out.println(addStr("123456", "789"));
     }
+
     public String multiply(String num1, String num2) {
         return null;
     }

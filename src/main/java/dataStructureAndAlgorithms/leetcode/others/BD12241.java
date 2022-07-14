@@ -13,7 +13,7 @@ import java.util.Collections;
 public class BD12241 {
     public static void main(String[] args) {
         char ch = 'a';
-        System.out.println((int)ch);
+        System.out.println((int) ch);
 
         System.out.println(checkInclusion("ab", "eidbaooo"));
     }

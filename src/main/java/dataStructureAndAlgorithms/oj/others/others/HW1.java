@@ -13,13 +13,14 @@ public class HW1 {
         System.out.println(getKNumNew(a, 5));
 
     }
+
     public static int getKNum(int[] ints, int k) {
         int[] result = new int[k];
         int flag = 0;
         int num = 1;
 
         for (int i = 0; i < k; i++) {
-            if (flag < ints.length && ints[flag] != num ) {
+            if (flag < ints.length && ints[flag] != num) {
                 result[i] = num;
                 num++;
             }
@@ -34,7 +35,7 @@ public class HW1 {
         int num = 1;
 
         for (int i = 0; i < k; i++) {
-            if (flag < ints.length && ints[flag] != num ) num++;
+            if (flag < ints.length && ints[flag] != num) num++;
             flag++;
             num++;
         }

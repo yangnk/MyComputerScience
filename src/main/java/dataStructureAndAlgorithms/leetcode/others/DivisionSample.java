@@ -24,10 +24,9 @@ public class DivisionSample {
         String decStr = Integer.toString(i);
         char[] ch = decStr.toCharArray();
         Arrays.sort(ch);
-        if (ch[0] != ch[1] && ch[1] != ch[2] && ch[2] != ch[3]
-                && ch[3] != ch[4]) {
+        if (ch[0] != ch[1] && ch[1] != ch[2] && ch[2] != ch[3] && ch[3] != ch[4]) {
             return false;
-        }else {
+        } else {
             return true;
         }
     }

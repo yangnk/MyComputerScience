@@ -34,7 +34,7 @@ public class Question_String_To_Integer_Atoi {
         int flag = 0;
         char ch;
         while (flag < string1.length()) {
-            if ((ch = string1.charAt(flag))  >= '0' && ch <= '9' || ch == '-') {
+            if ((ch = string1.charAt(flag)) >= '0' && ch <= '9' || ch == '-') {
                 flag++;
                 continue;
             }
@@ -46,12 +46,10 @@ public class Question_String_To_Integer_Atoi {
 
         String string2 = string1.substring(0, flag);//整数字符串
 
-        if ((string2.charAt(0) == '-' && string2.length() > String.valueOf(Integer.MIN_VALUE).length())
-                || (string2.length() == String.valueOf(Integer.MIN_VALUE).length() && string2.compareTo(String.valueOf(Integer.MIN_VALUE)) < 0)) {
+        if ((string2.charAt(0) == '-' && string2.length() > String.valueOf(Integer.MIN_VALUE).length()) || (string2.length() == String.valueOf(Integer.MIN_VALUE).length() && string2.compareTo(String.valueOf(Integer.MIN_VALUE)) < 0)) {
             return Integer.MIN_VALUE;
         }
-        if (string2.length()> String.valueOf(Integer.MAX_VALUE).length()
-                || (string2.length() == String.valueOf(Integer.MIN_VALUE).length() && string2.compareTo(String.valueOf(Integer.MAX_VALUE)) > 0)) {
+        if (string2.length() > String.valueOf(Integer.MAX_VALUE).length() || (string2.length() == String.valueOf(Integer.MIN_VALUE).length() && string2.compareTo(String.valueOf(Integer.MAX_VALUE)) > 0)) {
             return Integer.MAX_VALUE;
         }
 

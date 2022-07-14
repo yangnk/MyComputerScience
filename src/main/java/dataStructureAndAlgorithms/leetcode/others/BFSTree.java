@@ -37,8 +37,14 @@ class BFSTreeNode {
     int val;
     BFSTreeNode left;
     BFSTreeNode right;
-    BFSTreeNode() {}
-    BFSTreeNode(int val) { this.val = val; }
+
+    BFSTreeNode() {
+    }
+
+    BFSTreeNode(int val) {
+        this.val = val;
+    }
+
     BFSTreeNode(int val, BFSTreeNode left, BFSTreeNode right) {
         this.val = val;
         this.left = left;

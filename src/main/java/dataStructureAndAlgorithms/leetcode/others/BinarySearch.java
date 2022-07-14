@@ -8,7 +8,7 @@ package dataStructureAndAlgorithms.leetcode.others;
  **/
 public class BinarySearch {
     public static void main(String[] args) {
-        int[] nums = {-1,0,3,5,9,12};
+        int[] nums = {-1, 0, 3, 5, 9, 12};
         int target = 2;
         int search = search(nums, target);
         System.out.println(search);
@@ -19,13 +19,13 @@ public class BinarySearch {
         int start = 0;
         int end = nums.length - 1;
         int flag = 0;
-        while (start <=  end){
+        while (start <= end) {
             flag = (start + end) / 2;
             if (nums[flag] == target) {
                 return flag;
             } else if (nums[flag] < target) {
                 start = flag + 1;
-            }else {
+            } else {
                 end = flag - 1;
             }
         }

@@ -16,7 +16,7 @@ public class QuestionRanking1205 {
         while (in.hasNextLine()) {
             String inputStr = in.nextLine();
             String[] strArr = inputStr.split("\\s+");
-            List<String> strList  = Arrays.asList(strArr);
+            List<String> strList = Arrays.asList(strArr);
             String ouputStr = strList.get(strArr.length - 1);
             System.out.println(ouputStr.length());
         }

@@ -13,10 +13,10 @@ import java.util.*;
 public class Leecode0115 {
     public int majorityElement(int[] nums) {
         Map<Integer, Integer> integerIntegerMap = new HashMap<>();
-        for (Integer i: nums) {
+        for (Integer i : nums) {
             if (!integerIntegerMap.containsKey(i)) {
                 integerIntegerMap.put(i, 1);
-            }else {
+            } else {
                 integerIntegerMap.put(i, integerIntegerMap.get(i) + 1);
             }
         }

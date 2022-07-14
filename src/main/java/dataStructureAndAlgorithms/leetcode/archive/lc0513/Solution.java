@@ -12,6 +12,7 @@ import java.util.List;
 public class Solution {
     List<List<Integer>> listList = new ArrayList<>();
     List<Integer> list = new ArrayList<>();
+
     public List<List<Integer>> combine(int n, int k) {
         combineTrace(n, k, 1);
         return listList;

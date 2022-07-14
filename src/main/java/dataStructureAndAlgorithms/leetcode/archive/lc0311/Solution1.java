@@ -14,7 +14,7 @@ class Solution1 {
         if (m >= floorNum && n >= floorNum) {
             if (floorNum == realNum) {
                 return (int) (floorNum + floorNum);
-            }else {
+            } else {
                 int leftInt = k - (int) (floorNum * floorNum);
                 int index = (leftInt - 1) / 2;
                 return (int) ((floorNum + 1) * index);

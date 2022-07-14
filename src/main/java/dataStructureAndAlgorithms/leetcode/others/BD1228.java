@@ -19,6 +19,7 @@ public class BD1228 {
         int[] nums = {4, 5, 6, 7, 0, 1, 2};
         System.out.println(search(nums, 0));
     }
+
     public static int search(int[] nums, int target) {
 //        int[] arrInt = new int[]{};
         Integer[] IntegerNums = Arrays.stream(nums).boxed().toArray(Integer[]::new);

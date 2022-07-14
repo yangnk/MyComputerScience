@@ -17,8 +17,14 @@ class TreeNod1230 {
     int val;
     TreeNod1230 left;
     TreeNod1230 right;
-    TreeNod1230() {}
-    TreeNod1230(int val) { this.val = val; }
+
+    TreeNod1230() {
+    }
+
+    TreeNod1230(int val) {
+        this.val = val;
+    }
+
     TreeNod1230(int val, TreeNod1230 left, TreeNod1230 right) {
         this.val = val;
         this.left = left;

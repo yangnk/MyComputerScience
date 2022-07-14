@@ -19,7 +19,8 @@ public class RomanToInteger0816 {
             put('C', 100);
             put('D', 500);
             put('M', 1000);
-        }};
+        }
+    };
 
     public int romanToInt(String s) {
         int len = s.length();

@@ -31,6 +31,7 @@ public class BD0113a {
         String s2 = "eidbaooo";
         System.out.println(checkInclusion(s1, s2));
     }
+
     public static boolean checkInclusion(String s1, String s2) {
         char[] s1Chars = s1.toCharArray();
         Arrays.sort(s1Chars);

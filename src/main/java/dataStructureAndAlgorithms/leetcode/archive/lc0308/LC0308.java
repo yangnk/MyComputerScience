@@ -16,7 +16,7 @@ public class LC0308 {
                 return middle;
             } else if (nums[middle] < target) {
                 start = middle + 1;
-            }else {
+            } else {
                 end = middle - 1;
             }
 

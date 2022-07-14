@@ -28,7 +28,7 @@ class CombinationProblem {
             return input;
         }
         //input的元素个数为1时
-        if ( input.size() == 1) {
+        if (input.size() == 1) {
             ArrayList<String> arrayList = input.get(0);
             ArrayList<ArrayList<String>> result = new ArrayList();
             for (String item : arrayList) {
@@ -42,13 +42,9 @@ class CombinationProblem {
         for (int i = 1; i < input.size(); i++) {
             ArrayList<String> arrayList = input.get(i);
             if (i == 1) {
-                result = first.stream().flatMap(x -> arrayList.stream()
-                        .map(y -> Arrays.asList(x, y).stream()
-                        .collect(Collectors.toCollection(ArrayList::new)))).collect(Collectors.toCollection(ArrayList::new));
-            }else {
-                result = result.stream().flatMap(x->arrayList.stream()
-                        .map(y-> Stream.concat(x.stream(),Arrays.asList(y).stream()).collect(Collectors.toCollection(ArrayList::new))))
-                        .collect(Collectors.toCollection(ArrayList::new));
+                result = first.stream().flatMap(x -> arrayList.stream().map(y -> Arrays.asList(x, y).stream().collect(Collectors.toCollection(ArrayList::new)))).collect(Collectors.toCollection(ArrayList::new));
+            } else {
+                result = result.stream().flatMap(x -> arrayList.stream().map(y -> Stream.concat(x.stream(), Arrays.asList(y).stream()).collect(Collectors.toCollection(ArrayList::new)))).collect(Collectors.toCollection(ArrayList::new));
             }
         }
         return result;

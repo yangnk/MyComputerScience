@@ -20,7 +20,7 @@ class TimeMap {
     public void set(String key, String value, int timestamp) {
         if (!hashMap.containsKey(key)) {
             new SubTreeMap((TreeMap<Integer, String>) new TreeMap<>().put(timestamp, value));
-        }else {
+        } else {
             hashMap.get(key).treeMap.put(timestamp, value);
         }
     }

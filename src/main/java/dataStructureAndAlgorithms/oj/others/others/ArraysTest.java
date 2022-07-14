@@ -17,7 +17,7 @@ public class ArraysTest {
 //        String str = Arrays.toString(intA);
 //        System.out.println(str);
         //  排序
-        Integer[] intArray = new Integer[] { 4, 1, 3, -23 };
+        Integer[] intArray = new Integer[]{4, 1, 3, -23};
 //        Arrays.sort(intArray, Collections.reverseOrder());
 //        String str = Arrays.toString(intArray);
 //        System.out.println(str);

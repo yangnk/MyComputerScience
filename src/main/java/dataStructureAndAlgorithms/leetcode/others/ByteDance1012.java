@@ -23,7 +23,7 @@ public class ByteDance1012 {
         int endSize = hs.size();
         if (startSize == endSize) {
             return true;
-        }else {
+        } else {
             return false;
         }
     }

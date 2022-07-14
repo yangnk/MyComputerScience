@@ -17,9 +17,7 @@ public class AccountTransfer {
         final CountDownLatch countDownLatch = new CountDownLatch(10);
 
         //创建线程池
-        ExecutorService executors = new ThreadPoolExecutor(10, 20, 10L,
-                                                            TimeUnit.SECONDS, new LinkedBlockingQueue<>(20),
-                                                            Executors.defaultThreadFactory(), new ThreadPoolExecutor.CallerRunsPolicy());
+        ExecutorService executors = new ThreadPoolExecutor(10, 20, 10L, TimeUnit.SECONDS, new LinkedBlockingQueue<>(20), Executors.defaultThreadFactory(), new ThreadPoolExecutor.CallerRunsPolicy());
         //转账任务加入线程池
         for (int i = 0; i < 10; i++) {
             executors.execute(new TransferThread(countDownLatch, account));
@@ -74,7 +72,7 @@ class TransferThread implements Runnable {
 }
 
 
-class Account{
+class Account {
     CopyOnWriteArrayList<AtomicInteger> acountList;
 
     public Account(int nums, int amount) {

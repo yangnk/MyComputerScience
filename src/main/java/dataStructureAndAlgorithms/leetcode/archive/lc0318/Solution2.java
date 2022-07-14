@@ -19,9 +19,9 @@ public class Solution2 {
             if (sum == target) {
                 count++;
             }
-        }else {
-            backtrack(nums, target, index+1, sum + nums[index]);
-            backtrack(nums, target, index+1, sum - nums[index]);
+        } else {
+            backtrack(nums, target, index + 1, sum + nums[index]);
+            backtrack(nums, target, index + 1, sum - nums[index]);
         }
     }
 }
