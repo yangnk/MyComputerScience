@@ -1,4 +1,4 @@
-package designPattern.creationalPattern.proxy;
+package designPattern.structuralPattern.proxy;
 
 /**
  * ${DESCRIPTION}
@@ -7,8 +7,8 @@ package designPattern.creationalPattern.proxy;
  * @create 2018-12-17 下午5:53
  **/
 public class SearchPoxy implements Search {
-    MyValidator validator = new MyValidator();
-    MyLogger myLogger = new MyLogger();
+    Validator validator = new Validator();
+    Logger logger = new Logger();
     RealSearch realSearch = new RealSearch();
 
     @Override
@@ -23,7 +23,7 @@ public class SearchPoxy implements Search {
     }
 
     private void dolog(String s) {
-        myLogger.log(s);
+        logger.log(s);
     }
 
     private Boolean validate(String s) {

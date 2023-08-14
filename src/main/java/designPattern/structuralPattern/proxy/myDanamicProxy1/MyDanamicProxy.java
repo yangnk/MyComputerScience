@@ -1,4 +1,4 @@
-package designPattern.creationalPattern.proxy.myDanamicProxy1;
+package designPattern.structuralPattern.proxy.myDanamicProxy1;
 
 
 import java.lang.reflect.Proxy;

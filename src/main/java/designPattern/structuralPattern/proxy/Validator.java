@@ -1,4 +1,4 @@
-package designPattern.creationalPattern.proxy;
+package designPattern.structuralPattern.proxy;
 
 /**
  * ${DESCRIPTION}
@@ -6,7 +6,7 @@ package designPattern.creationalPattern.proxy;
  * @author yangningkai
  * @create 2018-12-17 下午5:57
  **/
-public class MyValidator {
+public class Validator {
     public Boolean validate(String s) {
         if (s == "yangyang") {
             System.out.println("login...");

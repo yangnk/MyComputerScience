@@ -1,4 +1,4 @@
-package designPattern.creationalPattern.proxy;
+package designPattern.structuralPattern.proxy;
 
 /**
  * ${DESCRIPTION}
@@ -6,7 +6,7 @@ package designPattern.creationalPattern.proxy;
  * @author yangningkai
  * @create 2018-12-17 下午5:58
  **/
-public class MyLogger {
+public class Logger {
     public void log(String s) {
         System.out.println("logger is printing...");
     }

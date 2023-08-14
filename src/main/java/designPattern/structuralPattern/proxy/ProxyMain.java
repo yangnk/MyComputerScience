@@ -1,4 +1,4 @@
-package designPattern.creationalPattern.proxy;
+package designPattern.structuralPattern.proxy;
 
 /**
  * ${DESCRIPTION}
